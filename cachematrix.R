@@ -2,7 +2,13 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Write a short comment describing this function:
+
+## The first function creats a list of functions to 
+## 1. set the value of the matrix
+## 2. get the value of the matrix
+## 3. set the value of the matrix inversion
+## 4. get the value of the matrix inversion
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -19,7 +25,12 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-## Write a short comment describing this function
+
+## The following function calculates the inversion
+## of matrix with the above funciton.
+## If the inversion has been calculated,
+## it gets the inversion from the cahce and skips the computation
+## Otherwise, it wll calculates the inverison and store it in the cache
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
